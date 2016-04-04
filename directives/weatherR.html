@@ -1,0 +1,12 @@
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.spanishprograms.com/blog/wp-content/uploads/2014/08/weather.jpg" alt="Weather Forecast">
+      <div class="caption">
+        <h3>{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat  }}</h3>
+        <p>
+            Daytime temperature: <span class="text text-danger" style="font-size: 46px">{{ convertToStandard({ daytimeTemp: weatherDay.temp.day }) }}</span><span class="text text-danger" style="font-size: 26px">F</span>
+        </p>
+        
+      </div>
+    </div>
+</div>
