@@ -7,7 +7,7 @@ myapp.controller("homeController",['$scope','$location','cityService',function($
         $location.path("/forecast");
     };
 }]);
-myapp.controller("forecastController",['$scope','$resource','$routeParams','cityService',function($scope,$resource,$routeParams,cityService){
+myapp.controller("forecastController",['$scope','$routeParams','cityService','weatherService',function($scope,$routeParams,cityService,weatherService){
     $scope.city=cityService.city; 
     
     $scope.days=$routeParams.days || '5';
